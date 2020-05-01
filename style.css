@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.app{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1{
+    margin: 50px 0px 30px 0px;
+    text-align: center;
+    font-size: 50px;
+}
+header p1{
+    font-size: 20px;
+}
+.pads{
+    background: lightblue;
+    width: 100%;
+    display: flex;
+}
+
+.pads > div{
+    height:100px;
+    width: 100px;
+    flex: 1;
+    z-index: 3;
+}
+.pad1{
+    background: #60d394;
+}
+.pad2{
+    background: #d4600d;
+}
+.pad3{
+    background: #d3ab60;
+}
+.pad4{
+    background: #607dd3;
+}
+.pad5{
+    background: #a560d3;
+}
+.pad6{
+    background: #60d392;
+}
+
+@keyframes jump{
+    0%{
+        top: 50%;
+        left: 0%;
+    }    
+    20%{
+        top: 50%;
+        left: 20%;
+    }
+    40%{
+        top: 50%;
+        left: 40%;
+    }
+    60%{
+        top: 50%;
+        left: 60%;
+    }
+    80%{
+        top: 50%;
+        left:80%;
+    }
+    100%{
+        top: 50%;
+        left: 100%;
+        display: none;
+    }
+}
+
+ .visual > div{
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    bottom: 0%;
+    z-index: -1;
+    overflow:hidden;
+}
